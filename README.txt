@@ -15,6 +15,7 @@ The structure for the folders/files are:
 
 	-data:
 		-input:
+			spike_alphafold3/: Directory containing output of AlphaFold3 for S-Protein
 			exposed_aa.txt : List of exposed amino acid positions
 			helices.txt : Amino acid positions that are part of alpha helices
 			IUPredScores.txt : Result output from IUPred3 (https://iupred3.elte.hu/)
@@ -33,8 +34,7 @@ The structure for the folders/files are:
 			sheets_list.txt : List of positions involved in sheets (easy parsing)
 
 	-figures:
-		entropy_levels_mutations_highres.tiff
-		entropy_levels_mutations_lowres.tiff
+		entropy_levels_mutations.tiff
 		entropy_per_position.tiff
 		softmax_probabilities.tiff
 
@@ -44,4 +44,5 @@ The structure for the folders/files are:
 		-get_entropy_probs.py : This will generate the entropy and probability visuals
 		-get_heatmap.py : This will generate the main heatmap visualizing the positions retained at various entropy levels
 		-run_PMPNN.sh : You will need to run this separately outside of the structure of this project
+
 
